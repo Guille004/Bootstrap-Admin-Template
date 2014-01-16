@@ -24,7 +24,7 @@ $.fn.dataTableExt.oApi.fnPagingInfo = function(oSettings)
         "iTotal": oSettings.fnRecordsTotal(),
         "iFilteredTotal": oSettings.fnRecordsDisplay(),
         "iPage": Math.ceil(oSettings._iDisplayStart / oSettings._iDisplayLength),
-        "iTotalPages": Math.ceil(oSettings.fnRecordsDisplay() / oSettings._iDisplayLength)
+        "iTotalPages": Math.ceil(oSettings.fnRecordsTotal() / oSettings._iDisplayLength)
     };
 };
 
